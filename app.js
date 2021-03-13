@@ -14,6 +14,7 @@ function createNumber() {
   console.log(number.join(' '));
   randomArray = number;
 }
+
 function render() {
   location.reload();
 }
@@ -21,6 +22,7 @@ function render() {
 function ganaste() {
   $('#myModal').modal();
 }
+
 $('#start').on('click', function () {
   render();
 });
