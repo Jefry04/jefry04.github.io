@@ -5,17 +5,15 @@
     <title>PICAS Y FIJAS</title>
     <link
       rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
-      crossorigin="anonymous"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
     />
   </head>
-  <body class="row m-0 justify-content-center align-items-center">
-    <div class="col-sm-4">
+  <body id="initial">
+    <div class="col-sm-6 col-sm-offset-3">
       <h1 class="text-center">PICAS Y FIJAS</h1>
       <p><b>Ingresa cuatro numeros diferentes y oprime enter</b></p>
       <form>
-        <div class="col-auto">
+        <div class="form-group col-auto">
           <input
             type="number"
             class="form-control form-control-sm"
@@ -35,9 +33,31 @@
         </thead>
         <tbody></tbody>
       </table>
+      <div class="modal fade" id="myModal" role="dialog">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">
+                &times;
+              </button>
+              <h4 class="modal-title">GANASTE</h4>
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-default"
+                id="start"
+                data-dismiss="modal"
+              >
+                JUGAR NUEVAMENTE
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <script src="app.js"></script>
   </body>
 </html>
